@@ -23,7 +23,6 @@ public static class Day2
         Console.WriteLine("Day 2, Part 2");
         List<List<int>> Reports = Inputs.GetDay2Reports();
         int SafeReportCount = 0;
-        string SafeReports = "";
 
         foreach (var report in Reports)
         {
@@ -34,7 +33,6 @@ public static class Day2
                 if (IsSafe(newReport))
                 {
                     SafeReportCount++;
-                    SafeReports += string.Join(" ", newReport) + "\n";
                     break;
                 }
             }
